@@ -8,76 +8,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #0f172a;
-      color: white;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #0f172a; color: white; }
 
     header {
-      position: fixed;
-      width: 100%;
-      top: 0;
+      position: fixed; width: 100%; top: 0;
       background: rgba(15, 23, 42, 0.9);
       padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: flex; justify-content: space-between; align-items: center;
       z-index: 1000;
     }
 
-    header h1 {
-      font-size: 20px;
-      color: #38bdf8;
-    }
+    header h1 { font-size: 20px; color: #38bdf8; }
 
     nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
+      margin-left: 20px; text-decoration: none; color: white; transition: 0.3s;
     }
+    nav a:hover { color: #38bdf8; }
 
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    section {
-      padding: 100px 40px;
-      min-height: 100vh;
-    }
+    section { padding: 100px 40px; min-height: 100vh; }
 
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; text-align: center;
     }
 
-    .hero img {
-      width: 120px;
-      margin-bottom: 20px;
-    }
+    .hero img { width: 140px; margin-bottom: 20px; }
 
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
+    .hero h2 { font-size: 36px; margin-bottom: 10px; }
+
+    .hero p { margin-bottom: 20px; opacity: 0.8; }
 
     .btn {
       background: #38bdf8;
-      padding: 12px 25px;
+      padding: 14px 28px;
       border-radius: 30px;
       text-decoration: none;
       color: black;
@@ -85,15 +50,10 @@
       transition: 0.3s;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
+    .btn:hover { transform: scale(1.05); }
 
     .cards {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
     }
 
     .card {
@@ -105,20 +65,19 @@
       transition: 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .card:hover { transform: translateY(-5px); }
+
+    .videos {
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
     }
 
-    iframe {
-      width: 100%;
-      height: 300px;
+    video {
+      width: 300px;
       border-radius: 10px;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
+      text-align: center; padding: 20px; background: #020617;
     }
   </style>
 </head>
@@ -136,26 +95,34 @@
 </header>
 
 <section class="hero">
+  <!-- COLOQUE SUA LOGO NA MESMA PASTA E TROQUE O NOME AQUI -->
   <img src="logo.png" alt="Logo">
+
   <h2>Aprenda Inglês de Forma Simples</h2>
-  <p>Aulas práticas, diretas e focadas na conversação</p>
+  <p>Uma grande caminhada começa com um único passo</p>
+
   <br>
-  <a class="btn" href="https://wa.me/5511991732103" target="_blank">Falar no WhatsApp</a>
+
+  <!-- TROQUE SEU NUMERO AQUI -->
+  <a class="btn" href="https://wa.me/55SEUNUMERO?text=Quero%20aprender%20ingl%C3%AAs,%20quais%20dias%20e%20hor%C3%A1rios%20voc%C3%AA%20tem%20dispon%C3%ADvel?" target="_blank">
+    Aprender Inglês
+  </a>
 </section>
 
 <section id="sobre">
   <h2>Sobre as Aulas</h2>
-  <p>Minhas aulas são focadas em destravar sua fala no inglês com métodos simples e diretos.</p>
+  <p>Minhas aulas são focadas em destravar sua fala no inglês com métodos simples, diretos e práticos.</p>
 
   <br><br>
 
   <h2>Sobre Mim</h2>
-  <p>Sou professor de inglês com foco em conversação e ensino prático.</p>
+  <p>Sou professor de inglês focado em conversação real, ajudando alunos a falarem com confiança no dia a dia.</p>
 </section>
 
 <section id="planos">
   <h2>Planos</h2>
   <br>
+
   <div class="cards">
     <div class="card">
       <h3>Plano Básico</h3>
@@ -180,13 +147,26 @@
 <section id="videos">
   <h2>Vídeos</h2>
   <br>
-  <iframe src="https://www.instagram.com/p/https://www.instagram.com/reel/DTajvnMjTcY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
+
+  <div class="videos">
+    <!-- COLOQUE SEUS VIDEOS NA MESMA PASTA -->
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+  </div>
 </section>
 
 <section id="contato">
   <h2>Entre em Contato</h2>
   <br>
-  <a class="btn" href="https://wa.me/551191732103" target="_blank">Chamar no WhatsApp</a>
+
+  <a class="btn" href="https://wa.me/55SEUNUMERO?text=Quero%20aprender%20ingl%C3%AAs,%20quais%20dias%20e%20hor%C3%A1rios%20voc%C3%AA%20tem%20dispon%C3%ADvel?" target="_blank">
+    Falar no WhatsApp
+  </a>
 </section>
 
 <footer>
