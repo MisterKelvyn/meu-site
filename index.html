@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Inglês</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 100px 40px;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Seu Curso</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#planos">Planos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="logo.png" alt="Logo">
+  <h2>Aprenda Inglês de Forma Simples</h2>
+  <p>Aulas práticas, diretas e focadas na conversação</p>
+  <br>
+  <a class="btn" href="https://wa.me/5511991732103" target="_blank">Falar no WhatsApp</a>
+</section>
+
+<section id="sobre">
+  <h2>Sobre as Aulas</h2>
+  <p>Minhas aulas são focadas em destravar sua fala no inglês com métodos simples e diretos.</p>
+
+  <br><br>
+
+  <h2>Sobre Mim</h2>
+  <p>Sou professor de inglês com foco em conversação e ensino prático.</p>
+</section>
+
+<section id="planos">
+  <h2>Planos</h2>
+  <br>
+  <div class="cards">
+    <div class="card">
+      <h3>Plano Básico</h3>
+      <p>1 aula por semana</p>
+      <h2>R$ 99</h2>
+    </div>
+
+    <div class="card">
+      <h3>Plano Intermediário</h3>
+      <p>2 aulas por semana</p>
+      <h2>R$ 179</h2>
+    </div>
+
+    <div class="card">
+      <h3>Plano Premium</h3>
+      <p>3 aulas por semana</p>
+      <h2>R$ 249</h2>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2>Vídeos</h2>
+  <br>
+  <iframe src="https://www.instagram.com/p/https://www.instagram.com/reel/DTajvnMjTcY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
+</section>
+
+<section id="contato">
+  <h2>Entre em Contato</h2>
+  <br>
+  <a class="btn" href="https://wa.me/551191732103" target="_blank">Chamar no WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 - Seu Curso de Inglês</p>
+</footer>
+
+</body>
+</html>
